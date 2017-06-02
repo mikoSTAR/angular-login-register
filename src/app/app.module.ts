@@ -1,3 +1,4 @@
+import { UserService } from './_services/user.service';
 import { AuthenticationService } from './_services/authentication.service';
 import { AlertService } from './_services/alert.service';
 import { BrowserModule } from '@angular/platform-browser';
@@ -24,6 +25,7 @@ import { fakeBackendProvider } from './_helpers/fake-backend';
     AuthGuard,
     AlertService,
     AuthenticationService,
+    UserService,
     fakeBackendProvider,
   ],
   bootstrap: [AppComponent]

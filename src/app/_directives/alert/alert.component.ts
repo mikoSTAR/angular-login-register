@@ -15,7 +15,6 @@ export class AlertComponent {
   }
 
   ngOnInit() {
-    console.log(this.alertService);
     this.alertService.getMessage().subscribe(message => { this.message = message; });
   }
 }
