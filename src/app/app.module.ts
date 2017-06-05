@@ -1,3 +1,4 @@
+import { routing } from './app.routing';
 import { UserService } from './_services/user.service';
 import { AuthenticationService } from './_services/authentication.service';
 import { AlertService } from './_services/alert.service';
@@ -10,16 +11,23 @@ import { AppComponent } from './app.component';
 import { AlertComponent } from './_directives/alert/alert.component';
 import { AuthGuard } from './_guards/auth.guard';
 import { fakeBackendProvider } from './_helpers/fake-backend';
+import { HomeComponent } from './home/index';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AlertComponent
+    AlertComponent,
+    HomeComponent,
+    LoginComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    routing
   ],
   providers: [
     AuthGuard,
