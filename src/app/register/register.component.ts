@@ -18,6 +18,10 @@ export class RegisterComponent implements OnInit {
     private router: Router,
   ) { }
 
+  ngOnInit() {
+
+  }
+
   register() {
     this.loading = true;
     this.userService.create(this.model)
