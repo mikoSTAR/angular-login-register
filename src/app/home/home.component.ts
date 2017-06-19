@@ -4,7 +4,6 @@ import { User } from '../_models/user';
 import { UserService } from '../_services/user.service';
 
 @Component({
-    moduleId: module.id,
     templateUrl: 'home.component.html'
 })
 

@@ -12,7 +12,7 @@ import { AlertComponent } from './_directives/alert/alert.component';
 import { AuthGuard } from './_guards/auth.guard';
 import { fakeBackendProvider } from './_helpers/fake-backend';
 import { MockBackend, MockConnection } from '@angular/http/testing';
-import { HomeComponent } from './home/index';
+import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 

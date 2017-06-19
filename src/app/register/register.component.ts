@@ -4,7 +4,6 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  moduleId: module.id,
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.scss']
 })
@@ -27,7 +26,7 @@ export class RegisterComponent implements OnInit {
     this.userService.create(this.model)
       .subscribe(
         data => {
-          this.alertService.success('Registration successful', true);
+          this.alertService.success('Registration successful', false);
           this.router.navigate(['/login']);
         },
         error => {

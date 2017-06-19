@@ -2,7 +2,6 @@ import { AlertService } from './../../_services/alert.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  moduleId: module.id,
   selector: 'alert',
   templateUrl: './alert.component.html',
 })
